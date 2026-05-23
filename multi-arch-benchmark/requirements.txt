@@ -1,0 +1,7 @@
+openai-agents
+gradio
+python-dotenv
+nest_asyncio
+pydantic
+pytest
+pytest-asyncio

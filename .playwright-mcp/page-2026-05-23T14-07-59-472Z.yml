@@ -1,0 +1,188 @@
+- generic [ref=e5]:
+  - main [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: Vol. 01 · Multi-Architecture Agent Benchmark · OpenAI Agents SDK
+        - heading "Three architectures. One brief. One winner." [level=1] [ref=e13]:
+          - text: Three architectures. One brief.
+          - emphasis [ref=e14]: One winner.
+        - paragraph [ref=e15]: A side-by-side benchmark of three agent orchestration patterns — sequential, director-led, and parallel-with-judge — on the same marketing brief. Token usage, latency, cost, and a blind quality score, reported together.
+      - generic [ref=e19]: § 01 — Architectures under test
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - generic [ref=e25]: 01 / Linear
+          - generic [ref=e26]: Sequential Pipeline
+          - generic [ref=e27]: Creative Director hands off to Strategist, who hands off to Copywriter. Each agent does its specialty stage and passes the result downstream.
+        - generic [ref=e28]:
+          - generic [ref=e29]: 02 / Hub
+          - generic [ref=e30]: Director-Orchestrator
+          - generic [ref=e31]: The Creative Director acts as the central agent and calls the Strategist and Copywriter as tools, deciding when to delegate and when to revise.
+        - generic [ref=e32]:
+          - generic [ref=e33]: 03 / Parallel
+          - generic [ref=e34]: Parallel + Judge
+          - generic [ref=e35]: All three agents produce a complete campaign in parallel from their own professional perspective; an internal judge picks the strongest.
+      - generic [ref=e39]: § 02 — Brief & configuration
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: Campaign brief
+            - textbox "Campaign brief" [ref=e47]:
+              - /placeholder: Describe the product, audience, and any constraints — e.g. "Launch a new eco-friendly water bottle in Bali targeting eco-conscious travellers."
+              - text: a campaign for a new kids bike to learn riding
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - img [ref=e51]
+              - text: Try an example brief
+            - generic [ref=e53]:
+              - button "Launch a campaign for a new eco-friendly water bottle in Bal..." [ref=e54] [cursor=pointer]:
+                - generic [ref=e56]: Launch a campaign for a new eco-friendly water bottle in Bal...
+              - button "Promote a premium electric bicycle for urban commuters in Am..." [ref=e57] [cursor=pointer]:
+                - generic [ref=e59]: Promote a premium electric bicycle for urban commuters in Am...
+              - button "Introduce a plant-based protein bar to gym-goers in São Paul..." [ref=e60] [cursor=pointer]:
+                - generic [ref=e62]: Introduce a plant-based protein bar to gym-goers in São Paul...
+        - button "Configuration — models & execution ▼" [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]: Configuration — models & execution
+          - generic [ref=e67]: ▼
+      - button "Run Benchmark" [ref=e68] [cursor=pointer]
+      - paragraph [ref=e195]:
+        - strong [ref=e196]: Benchmark complete.
+        - text: 3/3 architectures succeeded · 5,239 tokens · $0.0018 total.
+      - generic [ref=e79]: § 03 — Findings
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - button [ref=e83] [cursor=pointer]: Comparison
+            - button [ref=e84] [cursor=pointer]: Final Outputs
+            - button [ref=e85] [cursor=pointer]: Per-Call Detail
+          - tablist [ref=e86]:
+            - tab "Comparison" [ref=e87] [cursor=pointer]
+            - tab "Final Outputs" [ref=e88] [cursor=pointer]
+            - tab "Per-Call Detail" [active] [selected] [ref=e89] [cursor=pointer]
+        - tabpanel [ref=e355]:
+          - generic [ref=e356]:
+            - paragraph [ref=e361]:
+              - emphasis [ref=e362]: Every individual agent call — what ran inside each architecture, with its own latency and token usage.
+            - generic [ref=e364]:
+              - toolbar "Table actions" [ref=e366]:
+                - generic [ref=e367]:
+                  - button "Copy table data" [ref=e368] [cursor=pointer]:
+                    - img [ref=e370]
+                  - button "Fullscreen" [ref=e373] [cursor=pointer]:
+                    - img [ref=e375]
+              - grid [ref=e377]:
+                - button "Drop CSV or TSV files here to import data into dataframe" [ref=e378]:
+                  - grid [ref=e379]:
+                    - table [ref=e380]:
+                      - rowgroup [ref=e381]:
+                        - row "Architecture Agent Latency Prompt Tokens Completion Tokens Total Tokens Cost" [ref=e382]:
+                          - columnheader "Architecture" [ref=e383]:
+                            - button "Architecture" [ref=e386] [cursor=pointer]
+                          - columnheader "Agent" [ref=e387]:
+                            - button "Agent" [ref=e390] [cursor=pointer]
+                          - columnheader "Latency" [ref=e391]:
+                            - button "Latency" [ref=e394] [cursor=pointer]
+                          - columnheader "Prompt Tokens" [ref=e395]:
+                            - button "Prompt Tokens" [ref=e398] [cursor=pointer]
+                          - columnheader "Completion Tokens" [ref=e399]:
+                            - button "Completion Tokens" [ref=e402] [cursor=pointer]
+                          - columnheader "Total Tokens" [ref=e403]:
+                            - button "Total Tokens" [ref=e406] [cursor=pointer]
+                          - columnheader "Cost" [ref=e407]:
+                            - button "Cost" [ref=e410] [cursor=pointer]
+                    - generic [ref=e411]:
+                      - generic [ref=e412]:
+                        - button "Sequential Pipeline" [ref=e415] [cursor=pointer]
+                        - button "Creative Director" [ref=e418] [cursor=pointer]
+                        - button "2.8s" [ref=e421] [cursor=pointer]
+                        - button "96" [ref=e424] [cursor=pointer]
+                        - button "101" [ref=e427] [cursor=pointer]
+                        - button "197" [ref=e430] [cursor=pointer]
+                        - button "$0.000075" [ref=e433] [cursor=pointer]
+                      - generic [ref=e434]:
+                        - button "Sequential Pipeline" [ref=e437] [cursor=pointer]
+                        - button "Strategist" [ref=e440] [cursor=pointer]
+                        - button "2.3s" [ref=e443] [cursor=pointer]
+                        - button "173" [ref=e446] [cursor=pointer]
+                        - button "131" [ref=e449] [cursor=pointer]
+                        - button "304" [ref=e452] [cursor=pointer]
+                        - button "$0.0001" [ref=e455] [cursor=pointer]
+                      - generic [ref=e456]:
+                        - button "Sequential Pipeline" [ref=e459] [cursor=pointer]
+                        - button "Copywriter" [ref=e462] [cursor=pointer]
+                        - button "4.4s" [ref=e465] [cursor=pointer]
+                        - button "199" [ref=e468] [cursor=pointer]
+                        - button "164" [ref=e471] [cursor=pointer]
+                        - button "363" [ref=e474] [cursor=pointer]
+                        - button "$0.0001" [ref=e477] [cursor=pointer]
+                      - generic [ref=e478]:
+                        - button "Director-Orchestrator" [ref=e481] [cursor=pointer]
+                        - button "Creative Director (Orchestrator)" [ref=e484] [cursor=pointer]
+                        - button "15.3s" [ref=e487] [cursor=pointer]
+                        - button "1,214" [ref=e490] [cursor=pointer]
+                        - button "419" [ref=e493] [cursor=pointer]
+                        - button "1,633" [ref=e496] [cursor=pointer]
+                        - button "$0.0004" [ref=e499] [cursor=pointer]
+                      - generic [ref=e500]:
+                        - button "Director-Orchestrator" [ref=e503] [cursor=pointer]
+                        - button "Strategist" [ref=e506] [cursor=pointer]
+                        - button "1.9s" [ref=e509] [cursor=pointer]
+                        - button "126" [ref=e512] [cursor=pointer]
+                        - button "102" [ref=e515] [cursor=pointer]
+                        - button "228" [ref=e518] [cursor=pointer]
+                        - button "$0.000080" [ref=e521] [cursor=pointer]
+                      - generic [ref=e522]:
+                        - button "Director-Orchestrator" [ref=e525] [cursor=pointer]
+                        - button "Copywriter" [ref=e528] [cursor=pointer]
+                        - button "3.8s" [ref=e531] [cursor=pointer]
+                        - button "104" [ref=e534] [cursor=pointer]
+                        - button "152" [ref=e537] [cursor=pointer]
+                        - button "256" [ref=e540] [cursor=pointer]
+                        - button "$0.0001" [ref=e543] [cursor=pointer]
+                      - generic [ref=e544]:
+                        - button "Parallel + Judge" [ref=e547] [cursor=pointer]
+                        - button "Creative Director (Full)" [ref=e550] [cursor=pointer]
+                        - button "5.3s" [ref=e553] [cursor=pointer]
+                        - button "89" [ref=e556] [cursor=pointer]
+                        - button "261" [ref=e559] [cursor=pointer]
+                        - button "350" [ref=e562] [cursor=pointer]
+                        - button "$0.0002" [ref=e565] [cursor=pointer]
+                      - generic [ref=e566]:
+                        - button "Parallel + Judge" [ref=e569] [cursor=pointer]
+                        - button "Strategist (Full)" [ref=e572] [cursor=pointer]
+                        - button "5.1s" [ref=e575] [cursor=pointer]
+                        - button "89" [ref=e578] [cursor=pointer]
+                        - button "233" [ref=e581] [cursor=pointer]
+                        - button "322" [ref=e584] [cursor=pointer]
+                        - button "$0.0002" [ref=e587] [cursor=pointer]
+                      - generic [ref=e588]:
+                        - button "Parallel + Judge" [ref=e591] [cursor=pointer]
+                        - button "Copywriter (Full)" [ref=e594] [cursor=pointer]
+                        - button "4.8s" [ref=e597] [cursor=pointer]
+                        - button "89" [ref=e600] [cursor=pointer]
+                        - button "261" [ref=e603] [cursor=pointer]
+                        - button "350" [ref=e606] [cursor=pointer]
+                        - button "$0.0002" [ref=e609] [cursor=pointer]
+                      - generic [ref=e610]:
+                        - button "Parallel + Judge" [ref=e613] [cursor=pointer]
+                        - button "Arch3 Internal Judge" [ref=e616] [cursor=pointer]
+                        - button "10.2s" [ref=e619] [cursor=pointer]
+                        - button "843" [ref=e622] [cursor=pointer]
+                        - button "393" [ref=e625] [cursor=pointer]
+                        - button "1,236" [ref=e628] [cursor=pointer]
+                        - button "$0.0004" [ref=e631] [cursor=pointer]
+      - generic [ref=e163]:
+        - generic [ref=e164]: Built with the OpenAI Agents SDK · Gradio
+        - generic [ref=e165]: Multi-Arch Benchmark · Vol. 01
+  - contentinfo "Gradio footer navigation" [ref=e166]:
+    - button "Use via API logo" [ref=e167] [cursor=pointer]:
+      - text: Use via API
+      - img "logo" [ref=e168]
+    - generic [ref=e169]: ·
+    - link "Built with Gradio logo" [ref=e170] [cursor=pointer]:
+      - /url: https://gradio.app
+      - text: Built with Gradio
+      - img "logo" [ref=e171]
+    - generic [ref=e172]: ·
+    - button "Settings Settings" [ref=e173] [cursor=pointer]:
+      - text: Settings
+      - img "Settings" [ref=e174]

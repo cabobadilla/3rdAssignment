@@ -1,0 +1,96 @@
+- generic [ref=e5]:
+  - main [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: Vol. 01 · Multi-Architecture Agent Benchmark · OpenAI Agents SDK
+        - heading "Three architectures. One brief. One winner." [level=1] [ref=e13]:
+          - text: Three architectures. One brief.
+          - emphasis [ref=e14]: One winner.
+        - paragraph [ref=e15]: A side-by-side benchmark of three agent orchestration patterns — sequential, director-led, and parallel-with-judge — on the same marketing brief. Token usage, latency, cost, and a blind quality score, reported together.
+      - generic [ref=e19]: § 01 — Architectures under test
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - generic [ref=e25]: 01 / Linear
+          - generic [ref=e26]: Sequential Pipeline
+          - generic [ref=e27]: Creative Director hands off to Strategist, who hands off to Copywriter. Each agent does its specialty stage and passes the result downstream.
+        - generic [ref=e28]:
+          - generic [ref=e29]: 02 / Hub
+          - generic [ref=e30]: Director-Orchestrator
+          - generic [ref=e31]: The Creative Director acts as the central agent and calls the Strategist and Copywriter as tools, deciding when to delegate and when to revise.
+        - generic [ref=e32]:
+          - generic [ref=e33]: 03 / Parallel
+          - generic [ref=e34]: Parallel + Judge
+          - generic [ref=e35]: All three agents produce a complete campaign in parallel from their own professional perspective; an internal judge picks the strongest.
+      - generic [ref=e39]: § 02 — Brief & configuration
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: Campaign brief
+            - textbox "Campaign brief" [ref=e47]:
+              - /placeholder: Describe the product, audience, and any constraints — e.g. "Launch a new eco-friendly water bottle in Bali targeting eco-conscious travellers."
+              - text: a campaign for a new kids bike to learn riding
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - img [ref=e51]
+              - text: Try an example brief
+            - generic [ref=e53]:
+              - button "Launch a campaign for a new eco-friendly water bottle in Bal..." [ref=e54] [cursor=pointer]:
+                - generic [ref=e56]: Launch a campaign for a new eco-friendly water bottle in Bal...
+              - button "Promote a premium electric bicycle for urban commuters in Am..." [ref=e57] [cursor=pointer]:
+                - generic [ref=e59]: Promote a premium electric bicycle for urban commuters in Am...
+              - button "Introduce a plant-based protein bar to gym-goers in São Paul..." [ref=e60] [cursor=pointer]:
+                - generic [ref=e62]: Introduce a plant-based protein bar to gym-goers in São Paul...
+        - button "Configuration — models & execution ▼" [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]: Configuration — models & execution
+          - generic [ref=e67]: ▼
+      - button "Run Benchmark" [ref=e68] [cursor=pointer]
+      - paragraph [ref=e195]:
+        - strong [ref=e196]: Benchmark complete.
+        - text: 3/3 architectures succeeded · 5,239 tokens · $0.0018 total.
+      - generic [ref=e79]: § 03 — Findings
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - button [ref=e83] [cursor=pointer]: Comparison
+            - button [ref=e84] [cursor=pointer]: Final Outputs
+            - button [ref=e85] [cursor=pointer]: Per-Call Detail
+          - tablist [ref=e86]:
+            - tab "Comparison" [ref=e87] [cursor=pointer]
+            - tab "Final Outputs" [active] [selected] [ref=e88] [cursor=pointer]
+            - tab "Per-Call Detail" [ref=e89] [cursor=pointer]
+        - tabpanel [ref=e330]:
+          - generic [ref=e331]:
+            - paragraph [ref=e336]:
+              - emphasis [ref=e337]: Each column is the final campaign produced by one architecture, exactly as written by its last agent.
+            - generic [ref=e339]:
+              - generic [ref=e341]:
+                - generic [ref=e342]: 01 · Sequential Pipeline
+                - textbox "01 · Sequential Pipeline" [disabled] [ref=e344]:
+                  - /placeholder: ""
+                  - text: "🚴‍♀️✨ Unlock adventures with our Ride & Thrive bikes! Perfectly crafted for young explorers, they promise safety and fun while getting your kiddos moving. Let every ride be a new memory! 🌳💚 #RideAndThrive #AdventureAwaits #FamilyFun 🌼👦 Encourage your child's growth and creativity with every pedal! Our bikes are designed to inspire outdoor exploration and an active lifestyle. Because every journey starts with a single ride! 🌍💕 #ActiveKids #OutdoorAdventure #HealthyFamilies 🏞️ Join the #RideAndThrive community! Share your family biking moments and inspire others to explore the great outdoors together. Let's create a world of adventure, one pedal at a time! 🚲❤️ #FamilyJourneys #CommunityRides #KidsOnWheels"
+              - generic [ref=e346]:
+                - generic [ref=e347]: 02 · Director-Orchestrator
+                - textbox "02 · Director-Orchestrator" [disabled] [ref=e349]:
+                  - /placeholder: ""
+                  - text: "### Campaign Package **Campaign Idea: BikeBuddy: Ride and Shine!** **Tagline:** \"Pedal into Adventure with Confidence!\" **Concept:** This campaign centers around the excitement of learning to ride a bike, featuring interactive workshops, adventure challenges, and community events where kids can bond, learn, and share their biking experiences. --- **Strategy:** BikeBuddy capitalizes on the growing interest in outdoor family activities, targeting parents of children aged 5-12. The campaign emphasizes community bonding and experiential learning through fun workshops and adventure challenges. By focusing on confidence-building and social interaction, BikeBuddy sets itself apart from traditional bike education programs, fostering a lifelong love for biking. --- **Tweets:** 🚴‍♂️✨ Ready to ride into adventure? Join us at BikeBuddy for community events that boost confidence and kickstart a love for biking! Let’s pedal through fun and learning together! #BikeBuddy #RideAndShine #AdventureAwaits 🌟 Kids, get ready to unlock your biking potential! Our workshops are designed to build your skills while having a blast! Don’t just ride, shine with BikeBuddy! 🚲💨 #KidsOnWheels #ConfidenceBuilding #BikeBuddy 🚲🌈 Join the BikeBuddy family! Together, we're not just riding—we're building friendships and having adventures! Let’s hit the road to a brighter, more confident tomorrow! #CommunityRides #BikeBuddy #FunLearning"
+              - generic [ref=e351]:
+                - generic [ref=e352]: 03 · Parallel + Judge
+                - textbox "03 · Parallel + Judge" [disabled] [ref=e354]:
+                  - /placeholder: ""
+                  - text: "**Campaign Name:** \"Pedal Pioneers & Pals\" **Tagline:** \"Every Journey Starts with a First Pedal—Together!\" ### Strategic Rationale: The \"Pedal Pioneers & Pals\" campaign combines the adventurous spirit of exploring the outdoors with the joy of friendship and family connection. It emphasizes the pivotal role of bikes in building confidence among children as they learn to ride, while also highlighting the shared experiences between friends or family members. This dual focus reassures parents that the bikes prioritize safety and ease of use, transforming the process of learning to ride into a memorable adventure filled with fun, connection, and skill development. ### Social Posts: 1. 🚴‍♂️🌟 \"Ready to explore the world together? Our Pedal Pioneers bike is the perfect companion for your child's first adventure! Every journey starts with a first pedal! #PedalPioneers #BikeAdventure\" 2. 🎉👫 \"Learning to ride is more fun with friends! Watch them gain confidence and make memories with every wobble and giggle! Let the adventures begin! #PedalPals #LearningTogether\" 3. 🌍💫 \"Adventure awaits! Our new bike isn’t just about pedaling; it's about friendships and discovering the great outdoors. Who's ready to become a Pioneer with their Pals? #PedalPioneers #StartYourJourney\" 4. 🛡️🚲 \"Safety meets fun! Our Pedal Pioneers bike will guide your little ones on their journey to becoming bike pros, all while enjoying unforgettable times with their buddies! #RideWithConfidence #PedalPals\" 5. 🥳🚴‍♀️ \"Every ride counts! Celebrate your child's milestones and create lasting bonds with our Pedal Pals bike—where every adventure is shared! Tag your riding buddy below! #EveryRideTogether #PedalPioneers\""
+      - generic [ref=e163]:
+        - generic [ref=e164]: Built with the OpenAI Agents SDK · Gradio
+        - generic [ref=e165]: Multi-Arch Benchmark · Vol. 01
+  - contentinfo "Gradio footer navigation" [ref=e166]:
+    - button "Use via API logo" [ref=e167] [cursor=pointer]:
+      - text: Use via API
+      - img "logo" [ref=e168]
+    - generic [ref=e169]: ·
+    - link "Built with Gradio logo" [ref=e170] [cursor=pointer]:
+      - /url: https://gradio.app
+      - text: Built with Gradio
+      - img "logo" [ref=e171]
+    - generic [ref=e172]: ·
+    - button "Settings Settings" [ref=e173] [cursor=pointer]:
+      - text: Settings
+      - img "Settings" [ref=e174]

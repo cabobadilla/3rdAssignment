@@ -1,0 +1,8 @@
+# Python venvs and caches — broadly applied to prevent past mistake (campaign-web-app/.venv was committed)
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.env
+
+# Local secrets
+.env

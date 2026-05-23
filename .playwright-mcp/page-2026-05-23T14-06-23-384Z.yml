@@ -1,0 +1,116 @@
+- generic [ref=e5]:
+  - main [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: Vol. 01 · Multi-Architecture Agent Benchmark · OpenAI Agents SDK
+        - heading "Three architectures. One brief. One winner." [level=1] [ref=e13]:
+          - text: Three architectures. One brief.
+          - emphasis [ref=e14]: One winner.
+        - paragraph [ref=e15]: A side-by-side benchmark of three agent orchestration patterns — sequential, director-led, and parallel-with-judge — on the same marketing brief. Token usage, latency, cost, and a blind quality score, reported together.
+      - generic [ref=e19]: § 01 — Architectures under test
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - generic [ref=e25]: 01 / Linear
+          - generic [ref=e26]: Sequential Pipeline
+          - generic [ref=e27]: Creative Director hands off to Strategist, who hands off to Copywriter. Each agent does its specialty stage and passes the result downstream.
+        - generic [ref=e28]:
+          - generic [ref=e29]: 02 / Hub
+          - generic [ref=e30]: Director-Orchestrator
+          - generic [ref=e31]: The Creative Director acts as the central agent and calls the Strategist and Copywriter as tools, deciding when to delegate and when to revise.
+        - generic [ref=e32]:
+          - generic [ref=e33]: 03 / Parallel
+          - generic [ref=e34]: Parallel + Judge
+          - generic [ref=e35]: All three agents produce a complete campaign in parallel from their own professional perspective; an internal judge picks the strongest.
+      - generic [ref=e39]: § 02 — Brief & configuration
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: Campaign brief
+            - textbox "Campaign brief" [ref=e47]:
+              - /placeholder: Describe the product, audience, and any constraints — e.g. "Launch a new eco-friendly water bottle in Bali targeting eco-conscious travellers."
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - img [ref=e51]
+              - text: Try an example brief
+            - generic [ref=e53]:
+              - button "Launch a campaign for a new eco-friendly water bottle in Bal..." [ref=e54] [cursor=pointer]:
+                - generic [ref=e56]: Launch a campaign for a new eco-friendly water bottle in Bal...
+              - button "Promote a premium electric bicycle for urban commuters in Am..." [ref=e57] [cursor=pointer]:
+                - generic [ref=e59]: Promote a premium electric bicycle for urban commuters in Am...
+              - button "Introduce a plant-based protein bar to gym-goers in São Paul..." [ref=e60] [cursor=pointer]:
+                - generic [ref=e62]: Introduce a plant-based protein bar to gym-goers in São Paul...
+        - button "Configuration — models & execution ▼" [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]: Configuration — models & execution
+          - generic [ref=e67]: ▼
+      - button "Run Benchmark" [ref=e68] [cursor=pointer]
+      - paragraph [ref=e73]:
+        - emphasis [ref=e74]: Idle.
+        - text: Enter a brief above and run the benchmark. Expect about 30–60 seconds on
+        - code [ref=e75]: gpt-4o-mini
+        - text: .
+      - generic [ref=e79]: § 03 — Findings
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - button [ref=e83] [cursor=pointer]: Comparison
+            - button [ref=e84] [cursor=pointer]: Final Outputs
+            - button [ref=e85] [cursor=pointer]: Per-Call Detail
+          - tablist [ref=e86]:
+            - tab "Comparison" [selected] [ref=e87] [cursor=pointer]
+            - tab "Final Outputs" [ref=e88] [cursor=pointer]
+            - tab "Per-Call Detail" [ref=e89] [cursor=pointer]
+        - tabpanel [ref=e90]:
+          - generic [ref=e91]:
+            - generic [ref=e93]:
+              - toolbar "Table actions" [ref=e95]:
+                - generic [ref=e96]:
+                  - button "Copy table data" [ref=e97] [cursor=pointer]:
+                    - img [ref=e99]
+                  - button "Fullscreen" [ref=e102] [cursor=pointer]:
+                    - img [ref=e104]
+              - grid [ref=e106]:
+                - button "Drop CSV or TSV files here to import data into dataframe" [ref=e107]:
+                  - grid [ref=e108]:
+                    - table [ref=e109]:
+                      - rowgroup [ref=e110]:
+                        - row "Architecture Tokens Latency Cost Creativity Strategic Fit Copy Quality Overall Notes" [ref=e111]:
+                          - columnheader "Architecture" [ref=e112]:
+                            - button "Architecture" [ref=e115] [cursor=pointer]
+                          - columnheader "Tokens" [ref=e116]:
+                            - button "Tokens" [ref=e119] [cursor=pointer]
+                          - columnheader "Latency" [ref=e120]:
+                            - button "Latency" [ref=e123] [cursor=pointer]
+                          - columnheader "Cost" [ref=e124]:
+                            - button "Cost" [ref=e127] [cursor=pointer]
+                          - columnheader "Creativity" [ref=e128]:
+                            - button "Creativity" [ref=e131] [cursor=pointer]
+                          - columnheader "Strategic Fit" [ref=e132]:
+                            - button "Strategic Fit" [ref=e135] [cursor=pointer]
+                          - columnheader "Copy Quality" [ref=e136]:
+                            - button "Copy Quality" [ref=e139] [cursor=pointer]
+                          - columnheader "Overall" [ref=e140]:
+                            - button "Overall" [ref=e143] [cursor=pointer]
+                          - columnheader "Notes" [ref=e144]:
+                            - button "Notes" [ref=e147] [cursor=pointer]
+            - generic [ref=e148]:
+              - button "Judge reasoning ▼" [ref=e149] [cursor=pointer]:
+                - generic [ref=e150]: Judge reasoning
+                - generic [ref=e151]: ▼
+              - paragraph [ref=e158]:
+                - emphasis [ref=e159]: Run a benchmark to see how each architecture scores on creativity, strategic fit, and copy quality.
+      - generic [ref=e163]:
+        - generic [ref=e164]: Built with the OpenAI Agents SDK · Gradio
+        - generic [ref=e165]: Multi-Arch Benchmark · Vol. 01
+  - contentinfo "Gradio footer navigation" [ref=e166]:
+    - button "Use via API logo" [ref=e167] [cursor=pointer]:
+      - text: Use via API
+      - img "logo" [ref=e168]
+    - generic [ref=e169]: ·
+    - link "Built with Gradio logo" [ref=e170] [cursor=pointer]:
+      - /url: https://gradio.app
+      - text: Built with Gradio
+      - img "logo" [ref=e171]
+    - generic [ref=e172]: ·
+    - button "Settings Settings" [ref=e173] [cursor=pointer]:
+      - text: Settings
+      - img "Settings" [ref=e174]

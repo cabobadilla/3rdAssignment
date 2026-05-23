@@ -1,0 +1,46 @@
+[     212ms] [WARNING] @import rules are not allowed here. See https://github.com/WICG/construct-stylesheets/issues/119#issuecomment-588352418. @ http://127.0.0.1:7860/assets/i18n-BlwlR3g4.js:6
+[     287ms] [WARNING] @import rules are not allowed here. See https://github.com/WICG/construct-stylesheets/issues/119#issuecomment-588352418. @ http://127.0.0.1:7860/assets/i18n-BlwlR3g4.js:6
+[     635ms] TypeError: Cannot read properties of undefined (reading '0')
+    at http://127.0.0.1:7860/assets/Index-WiAYvFvO.js:1:5283
+    at Object.get (http://127.0.0.1:7860/assets/i18n-BlwlR3g4.js:3:10302)
+    at http://127.0.0.1:7860/assets/Index-WiAYvFvO.js:1:1996
+    at fn (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:21956)
+    at st (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:23071)
+    at Zn (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:3770)
+    at X.process (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:818)
+    at Pr (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:3446)
+    at X.flush (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:1637)
+    at Array.<anonymous> (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:2778)
+[     636ms] TypeError: Cannot read properties of undefined (reading '0')
+    at http://127.0.0.1:7860/assets/Index-WiAYvFvO.js:1:5283
+    at Object.get (http://127.0.0.1:7860/assets/i18n-BlwlR3g4.js:3:10302)
+    at http://127.0.0.1:7860/assets/Index-WiAYvFvO.js:1:1996
+    at fn (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:21956)
+    at st (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:23071)
+    at Zn (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:3770)
+    at X.process (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:818)
+    at Pr (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:3446)
+    at co (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:3085)
+    at A (http://127.0.0.1:7860/assets/Index-WiAYvFvO.js:1:1585)
+[     636ms] TypeError: Cannot read properties of undefined (reading '0')
+    at http://127.0.0.1:7860/assets/Index-WiAYvFvO.js:1:5283
+    at Object.get (http://127.0.0.1:7860/assets/i18n-BlwlR3g4.js:3:10302)
+    at http://127.0.0.1:7860/assets/Index-WiAYvFvO.js:1:1996
+    at fn (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:21956)
+    at st (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:23071)
+    at Zn (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:3770)
+    at X.process (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:818)
+    at Pr (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:3446)
+    at co (http://127.0.0.1:7860/assets/index-B5CnGmTK.js:45:3085)
+    at A (http://127.0.0.1:7860/assets/Index-WiAYvFvO.js:1:1585)
+[   41632ms] RangeError: Maximum call stack size exceeded
+    at Object.get [as groupedColumnMode] (http://127.0.0.1:7860/assets/Index-CytOJC_D.js:4:51010)
+    at Object.get [as groupedColumnMode] (http://127.0.0.1:7860/assets/Index-CytOJC_D.js:4:51100)
+    at Object.get [as groupedColumnMode] (http://127.0.0.1:7860/assets/Index-CytOJC_D.js:4:51100)
+    at Object.get [as groupedColumnMode] (http://127.0.0.1:7860/assets/Index-CytOJC_D.js:4:51100)
+    at Object.get [as groupedColumnMode] (http://127.0.0.1:7860/assets/Index-CytOJC_D.js:4:51100)
+    at Object.get [as groupedColumnMode] (http://127.0.0.1:7860/assets/Index-CytOJC_D.js:4:51100)
+    at Object.get [as groupedColumnMode] (http://127.0.0.1:7860/assets/Index-CytOJC_D.js:4:51100)
+    at Object.get [as groupedColumnMode] (http://127.0.0.1:7860/assets/Index-CytOJC_D.js:4:51100)
+    at Object.get [as groupedColumnMode] (http://127.0.0.1:7860/assets/Index-CytOJC_D.js:4:51100)
+    at Object.get [as groupedColumnMode] (http://127.0.0.1:7860/assets/Index-CytOJC_D.js:4:51100)

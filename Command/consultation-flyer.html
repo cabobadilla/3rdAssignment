@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cami Lawyer — Complimentary 30-Minute Consultation</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #d8d2c4;
+    font-family: 'Lato', Arial, sans-serif;
+    color: #0B2545;
+  }
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 24px auto;
+    background-color: #F5F1E8;
+    padding: 0.55in 0.7in;
+    box-shadow: 0 8px 40px rgba(11, 37, 69, 0.15);
+    position: relative;
+    overflow: hidden;
+  }
+  .page::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 14px;
+    background-color: #0B2545;
+  }
+  .page::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 6px;
+    background-color: #7A1F2B;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #0B2545;
+    padding-bottom: 18px;
+    margin-bottom: 36px;
+  }
+  .brand-block .brand {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #0B2545;
+    letter-spacing: 0.5px;
+    line-height: 1;
+  }
+  .brand-block .sub {
+    margin-top: 6px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #7A1F2B;
+    font-weight: 700;
+  }
+  .badge {
+    text-align: right;
+    border-left: 3px solid #7A1F2B;
+    padding-left: 14px;
+  }
+  .badge .label {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #0B2545;
+    opacity: 0.75;
+  }
+  .badge .value {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 18px;
+    color: #7A1F2B;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    margin-bottom: 44px;
+  }
+  .eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #7A1F2B;
+    font-weight: 700;
+    padding: 6px 14px;
+    border: 1px solid #7A1F2B;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 54px;
+    line-height: 1.05;
+    font-weight: 700;
+    color: #0B2545;
+    margin: 0 0 18px 0;
+  }
+  h1 .accent {
+    color: #7A1F2B;
+    font-style: italic;
+  }
+  .hero p {
+    font-size: 16px;
+    color: #0B2545;
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* Practice Areas */
+  .areas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 40px;
+  }
+  .area {
+    background-color: #FFFFFF;
+    border-top: 4px solid #7A1F2B;
+    padding: 24px 20px 22px 20px;
+    text-align: left;
+  }
+  .area .num {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 14px;
+    color: #7A1F2B;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+  .area h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 21px;
+    color: #0B2545;
+    margin: 6px 0 12px 0;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  .area p {
+    font-size: 13.5px;
+    color: #0B2545;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  /* CTA */
+  .cta-band {
+    background-color: #0B2545;
+    color: #F5F1E8;
+    padding: 32px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 30px;
+  }
+  .cta-band .left {
+    flex: 1;
+  }
+  .cta-band .left .title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .cta-band .left .body {
+    font-size: 13.5px;
+    line-height: 1.5;
+    opacity: 0.92;
+  }
+  .cta-band .right .button {
+    display: inline-block;
+    background-color: #7A1F2B;
+    color: #F5F1E8;
+    text-decoration: none;
+    padding: 16px 28px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 16px;
+    border-top: 1px solid #0B2545;
+  }
+  .contact-list {
+    font-size: 12.5px;
+    color: #0B2545;
+    line-height: 1.7;
+  }
+  .contact-list strong {
+    color: #7A1F2B;
+    letter-spacing: 1.5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .contacts {
+    display: flex;
+    gap: 36px;
+  }
+  .tagline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #7A1F2B;
+    text-align: right;
+  }
+
+  @media print {
+    body { background: #FFF; }
+    .page { box-shadow: none; margin: 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="header">
+      <div class="brand-block">
+        <div class="brand">Cami Lawyer</div>
+        <div class="sub">Professional Legal Counsel</div>
+      </div>
+      <div class="badge">
+        <div class="label">Limited Availability</div>
+        <div class="value">Spring 2026</div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="eyebrow">Complimentary Consultation</div>
+      <h1>Thirty minutes with <span class="accent">trusted counsel.</span></h1>
+      <p>An introductory conversation with an experienced lawyer — no obligation, no fee. Bring your matter, your questions, and your timeline. You will leave with a clearer picture of your options.</p>
+    </div>
+
+    <div class="areas">
+
+      <div class="area">
+        <div class="num">01 — Practice Area</div>
+        <h3>Contract Review &amp; Drafting</h3>
+        <p>Precise review of vendor agreements, commercial leases, partnership deeds, and employment contracts. Every clause examined; every risk explained in plain language.</p>
+      </div>
+
+      <div class="area">
+        <div class="num">02 — Practice Area</div>
+        <h3>Business Formation &amp; Counsel</h3>
+        <p>Experienced guidance for founders and operators — entity selection, shareholder agreements, governance, and the ongoing advisory work that protects your venture as it grows.</p>
+      </div>
+
+      <div class="area">
+        <div class="num">03 — Practice Area</div>
+        <h3>Dispute Resolution &amp; Advocacy</h3>
+        <p>A professional advocate when disagreements arise. From early negotiation to formal proceedings, you will have counsel committed to clear-eyed strategy and measured results.</p>
+      </div>
+
+    </div>
+
+    <div class="cta-band">
+      <div class="left">
+        <div class="title">Reserve Your Thirty Minutes</div>
+        <div class="body">Consultations are scheduled in person or by secure video. Please bring any documents you would like reviewed during our conversation.</div>
+      </div>
+      <div class="right">
+        <a href="#" class="button">Book Consultation</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="contacts">
+        <div class="contact-list">
+          <strong>Telephone</strong>
+          (000) 000-0000
+        </div>
+        <div class="contact-list">
+          <strong>Email</strong>
+          consult@camilawyer.com
+        </div>
+        <div class="contact-list">
+          <strong>Office</strong>
+          By appointment
+        </div>
+      </div>
+      <div class="tagline">Clear counsel. Trusted results.</div>
+    </div>
+
+  </div>
+</body>
+</html>

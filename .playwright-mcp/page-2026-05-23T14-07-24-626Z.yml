@@ -1,0 +1,199 @@
+- generic [ref=e5]:
+  - main [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: Vol. 01 · Multi-Architecture Agent Benchmark · OpenAI Agents SDK
+        - heading "Three architectures. One brief. One winner." [level=1] [ref=e13]:
+          - text: Three architectures. One brief.
+          - emphasis [ref=e14]: One winner.
+        - paragraph [ref=e15]: A side-by-side benchmark of three agent orchestration patterns — sequential, director-led, and parallel-with-judge — on the same marketing brief. Token usage, latency, cost, and a blind quality score, reported together.
+      - generic [ref=e19]: § 01 — Architectures under test
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - generic [ref=e25]: 01 / Linear
+          - generic [ref=e26]: Sequential Pipeline
+          - generic [ref=e27]: Creative Director hands off to Strategist, who hands off to Copywriter. Each agent does its specialty stage and passes the result downstream.
+        - generic [ref=e28]:
+          - generic [ref=e29]: 02 / Hub
+          - generic [ref=e30]: Director-Orchestrator
+          - generic [ref=e31]: The Creative Director acts as the central agent and calls the Strategist and Copywriter as tools, deciding when to delegate and when to revise.
+        - generic [ref=e32]:
+          - generic [ref=e33]: 03 / Parallel
+          - generic [ref=e34]: Parallel + Judge
+          - generic [ref=e35]: All three agents produce a complete campaign in parallel from their own professional perspective; an internal judge picks the strongest.
+      - generic [ref=e39]: § 02 — Brief & configuration
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: Campaign brief
+            - textbox "Campaign brief" [ref=e47]:
+              - /placeholder: Describe the product, audience, and any constraints — e.g. "Launch a new eco-friendly water bottle in Bali targeting eco-conscious travellers."
+              - text: a campaign for a new kids bike to learn riding
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - img [ref=e51]
+              - text: Try an example brief
+            - generic [ref=e53]:
+              - button "Launch a campaign for a new eco-friendly water bottle in Bal..." [ref=e54] [cursor=pointer]:
+                - generic [ref=e56]: Launch a campaign for a new eco-friendly water bottle in Bal...
+              - button "Promote a premium electric bicycle for urban commuters in Am..." [ref=e57] [cursor=pointer]:
+                - generic [ref=e59]: Promote a premium electric bicycle for urban commuters in Am...
+              - button "Introduce a plant-based protein bar to gym-goers in São Paul..." [ref=e60] [cursor=pointer]:
+                - generic [ref=e62]: Introduce a plant-based protein bar to gym-goers in São Paul...
+        - button "Configuration — models & execution ▼" [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]: Configuration — models & execution
+          - generic [ref=e67]: ▼
+      - button "Run Benchmark" [active] [ref=e68] [cursor=pointer]
+      - paragraph [ref=e195]:
+        - strong [ref=e196]: Benchmark complete.
+        - text: 3/3 architectures succeeded · 5,239 tokens · $0.0018 total.
+      - generic [ref=e79]: § 03 — Findings
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - button [ref=e83] [cursor=pointer]: Comparison
+            - button [ref=e84] [cursor=pointer]: Final Outputs
+            - button [ref=e85] [cursor=pointer]: Per-Call Detail
+          - tablist [ref=e86]:
+            - tab "Comparison" [selected] [ref=e87] [cursor=pointer]
+            - tab "Final Outputs" [ref=e88] [cursor=pointer]
+            - tab "Per-Call Detail" [ref=e89] [cursor=pointer]
+        - tabpanel [ref=e90]:
+          - generic [ref=e91]:
+            - generic [ref=e93]:
+              - toolbar "Table actions" [ref=e95]:
+                - generic [ref=e96]:
+                  - button "Copy table data" [ref=e97] [cursor=pointer]:
+                    - img [ref=e99]
+                  - button "Fullscreen" [ref=e102] [cursor=pointer]:
+                    - img [ref=e104]
+              - grid [ref=e106]:
+                - button "Drop CSV or TSV files here to import data into dataframe" [ref=e107]:
+                  - grid [ref=e108]:
+                    - table [ref=e109]:
+                      - rowgroup [ref=e110]:
+                        - row "Architecture Tokens Latency Cost Creativity Strategic Fit Copy Quality Overall Notes" [ref=e111]:
+                          - columnheader "Architecture" [ref=e112]:
+                            - button "Architecture" [ref=e115] [cursor=pointer]
+                          - columnheader "Tokens" [ref=e116]:
+                            - button "Tokens" [ref=e119] [cursor=pointer]
+                          - columnheader "Latency" [ref=e120]:
+                            - button "Latency" [ref=e123] [cursor=pointer]
+                          - columnheader "Cost" [ref=e124]:
+                            - button "Cost" [ref=e127] [cursor=pointer]
+                          - columnheader "Creativity" [ref=e128]:
+                            - button "Creativity" [ref=e131] [cursor=pointer]
+                          - columnheader "Strategic Fit" [ref=e132]:
+                            - button "Strategic Fit" [ref=e135] [cursor=pointer]
+                          - columnheader "Copy Quality" [ref=e136]:
+                            - button "Copy Quality" [ref=e139] [cursor=pointer]
+                          - columnheader "Overall" [ref=e140]:
+                            - button "Overall" [ref=e143] [cursor=pointer]
+                          - columnheader "Notes" [ref=e144]:
+                            - button "Notes" [ref=e147] [cursor=pointer]
+                    - generic [ref=e197]:
+                      - generic [ref=e198]:
+                        - button "Sequential Pipeline" [ref=e201] [cursor=pointer]
+                        - button "864" [ref=e204] [cursor=pointer]
+                        - button "9.4s" [ref=e207] [cursor=pointer]
+                        - button "$0.0003" [ref=e210] [cursor=pointer]
+                        - button "6" [ref=e213] [cursor=pointer]
+                        - button "7" [ref=e216] [cursor=pointer]
+                        - button "7" [ref=e219] [cursor=pointer]
+                        - button "6" [ref=e222] [cursor=pointer]
+                        - generic [ref=e224]:
+                          - button
+                      - generic [ref=e225]:
+                        - button "★ Director-Orchestrator" [ref=e228] [cursor=pointer]
+                        - button "2,117" [ref=e231] [cursor=pointer]
+                        - button "15.3s" [ref=e234] [cursor=pointer]
+                        - button "$0.0006" [ref=e237] [cursor=pointer]
+                        - button "8" [ref=e240] [cursor=pointer]
+                        - button "9" [ref=e243] [cursor=pointer]
+                        - button "8" [ref=e246] [cursor=pointer]
+                        - button "8" [ref=e249] [cursor=pointer]
+                        - generic [ref=e251]:
+                          - button
+                      - generic [ref=e252]:
+                        - button "Parallel + Judge" [ref=e255] [cursor=pointer]
+                        - button "2,258" [ref=e258] [cursor=pointer]
+                        - button "15.5s" [ref=e261] [cursor=pointer]
+                        - button "$0.0009" [ref=e264] [cursor=pointer]
+                        - button "7" [ref=e267] [cursor=pointer]
+                        - button "8" [ref=e270] [cursor=pointer]
+                        - button "7" [ref=e273] [cursor=pointer]
+                        - button "7" [ref=e276] [cursor=pointer]
+                        - generic [ref=e278]:
+                          - button
+            - generic [ref=e148]:
+              - button "Judge reasoning ▼" [ref=e149] [cursor=pointer]:
+                - generic [ref=e150]: Judge reasoning
+                - generic [ref=e151]: ▼
+              - generic [ref=e157]:
+                - heading "Sequential Pipeline" [level=3] [ref=e279]
+                - table [ref=e280]:
+                  - rowgroup [ref=e281]:
+                    - row "Creativity Strategic Fit Copy Quality Overall" [ref=e282]:
+                      - columnheader "Creativity" [ref=e283]
+                      - columnheader "Strategic Fit" [ref=e284]
+                      - columnheader "Copy Quality" [ref=e285]
+                      - columnheader "Overall" [ref=e286]:
+                        - strong [ref=e287]: Overall
+                  - rowgroup [ref=e288]:
+                    - row "6/10 7/10 7/10 6/10" [ref=e289]:
+                      - cell "6/10" [ref=e290]
+                      - cell "7/10" [ref=e291]
+                      - cell "7/10" [ref=e292]
+                      - cell "6/10" [ref=e293]:
+                        - strong [ref=e294]: 6/10
+                - paragraph [ref=e295]: The sequential campaign conveys a message suitable for kids and parents but lacks a distinct central concept that ties the various messages together effectively.
+                - heading "Director-Orchestrator ★ winner" [level=3] [ref=e296]
+                - table [ref=e297]:
+                  - rowgroup [ref=e298]:
+                    - row "Creativity Strategic Fit Copy Quality Overall" [ref=e299]:
+                      - columnheader "Creativity" [ref=e300]
+                      - columnheader "Strategic Fit" [ref=e301]
+                      - columnheader "Copy Quality" [ref=e302]
+                      - columnheader "Overall" [ref=e303]:
+                        - strong [ref=e304]: Overall
+                  - rowgroup [ref=e305]:
+                    - row "8/10 9/10 8/10 8/10" [ref=e306]:
+                      - cell "8/10" [ref=e307]
+                      - cell "9/10" [ref=e308]
+                      - cell "8/10" [ref=e309]
+                      - cell "8/10" [ref=e310]:
+                        - strong [ref=e311]: 8/10
+                - paragraph [ref=e312]: The orchestrator's campaign showcases a strong strategic approach, effectively creating community engagement and focusing on experiential learning while enhancing confidence among kids.
+                - heading "Parallel + Judge" [level=3] [ref=e313]
+                - table [ref=e314]:
+                  - rowgroup [ref=e315]:
+                    - row "Creativity Strategic Fit Copy Quality Overall" [ref=e316]:
+                      - columnheader "Creativity" [ref=e317]
+                      - columnheader "Strategic Fit" [ref=e318]
+                      - columnheader "Copy Quality" [ref=e319]
+                      - columnheader "Overall" [ref=e320]:
+                        - strong [ref=e321]: Overall
+                  - rowgroup [ref=e322]:
+                    - row "7/10 8/10 7/10 7/10" [ref=e323]:
+                      - cell "7/10" [ref=e324]
+                      - cell "8/10" [ref=e325]
+                      - cell "7/10" [ref=e326]
+                      - cell "7/10" [ref=e327]:
+                        - strong [ref=e328]: 7/10
+                - paragraph [ref=e329]: The parallel judge's campaign provides a friendly and adventurous appeal with a good focus on safety and connection, though the copy quality could be further refined for greater impact.
+      - generic [ref=e163]:
+        - generic [ref=e164]: Built with the OpenAI Agents SDK · Gradio
+        - generic [ref=e165]: Multi-Arch Benchmark · Vol. 01
+  - contentinfo "Gradio footer navigation" [ref=e166]:
+    - button "Use via API logo" [ref=e167] [cursor=pointer]:
+      - text: Use via API
+      - img "logo" [ref=e168]
+    - generic [ref=e169]: ·
+    - link "Built with Gradio logo" [ref=e170] [cursor=pointer]:
+      - /url: https://gradio.app
+      - text: Built with Gradio
+      - img "logo" [ref=e171]
+    - generic [ref=e172]: ·
+    - button "Settings Settings" [ref=e173] [cursor=pointer]:
+      - text: Settings
+      - img "Settings" [ref=e174]
